@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&family=Noto+Sans+Ethiopic:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+.font-serif {
+  font-family: 'Fraunces', 'Noto Sans Ethiopic', serif;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Manrope', 'Noto Sans Ethiopic', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+/* Amharic spacing safety */
+
+[data-lang="am"] h1,
+[data-lang="am"] h2,
+[data-lang="am"] h3 {
+  line-height: 1.45;
+}
+
+[data-lang="am"] p,
+[data-lang="am"] li,
+[data-lang="am"] .font-serif + p {
+  line-height: 1.9;
+}
+
+[data-lang="am"] button,
+[data-lang="am"] a {
+  line-height: 1.4;
+  word-break: keep-all;
+}
+
+[data-lang="am"] .rounded-full {
+  white-space: normal;
+}
